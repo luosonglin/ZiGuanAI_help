@@ -1,0 +1,16 @@
+{
+  "name": "help-vitepress",
+  "version": "1.0.0",
+  "description": "科学城集团资管系统帮助中心",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.0"
+  }
+}
