@@ -34,6 +34,7 @@ export default defineConfig({
           { text: '资管工作台', link: '/using-system/workbench/ai-assistant' },
           { text: '投资企业档案', link: '/using-system/enterprise-archive/enterprise-file' },
           { text: '企业经营监测', link: '/using-system/business-monitor/dynamic-monitor' },
+          { text: '资管任务', link: '/using-system/task-management/' },
           { text: '报告工作台', link: '/using-system/report-workbench' },
           { text: '资管数据库', link: '/using-system/database/financial-db' },
           { text: '资管内训', link: '/using-system/training/question-bank' }
@@ -61,6 +62,36 @@ export default defineConfig({
         }
       ],
       '/using-system/': [
+        {
+          text: '资管任务',
+          items: [
+            { text: '任务分发', link: '/using-system/task-management/' },
+            {
+              text: '创建/编辑任务',
+              items: [
+                { text: '创建/编辑任务', link: '/using-system/task-management/create-task/' },
+                { text: '分配对象', link: '/using-system/task-management/create-task/assign-object' },
+                { text: '重要紧急程度', link: '/using-system/task-management/create-task/priority' },
+                { text: '督办', link: '/using-system/task-management/create-task/supervision' }
+              ]
+            },
+            {
+              text: '定期重复任务',
+              items: [
+                { text: '定期重复任务', link: '/using-system/task-management/repeat-task/' },
+                { text: '自定义时间', link: '/using-system/task-management/repeat-task/custom-time' }
+              ]
+            },
+            { text: '任务描述', link: '/using-system/task-management/task-description' },
+            { text: '添加附件', link: '/using-system/task-management/attachments' },
+            { text: '子任务', link: '/using-system/task-management/subtasks' },
+            { text: '引入模板', link: '/using-system/task-management/templates' },
+            { text: '分享', link: '/using-system/task-management/share' },
+            { text: '跟进', link: '/using-system/task-management/follow-up' },
+            { text: '提醒', link: '/using-system/task-management/reminders' },
+            { text: '执行', link: '/using-system/task-management/execute' }
+          ]
+        },
         {
           text: '资管工作台',
           items: [
@@ -91,6 +122,7 @@ export default defineConfig({
             { text: '报告工作台', link: '/using-system/report-workbench' }
           ]
         },
+       
         {
           text: '资管数据库',
           items: [
