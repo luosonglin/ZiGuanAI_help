@@ -1,0 +1,454 @@
+/* 品牌色定义 */
+:root {
+  --brand-primary: #364fc7;
+  --brand-secondary: #4c6ef5;
+  --neutral-dark: #1a1a1a;
+  --neutral-gray: #495057;
+  --neutral-light: #e9ecef;
+  --card-bg: #f8f9fa;
+  --spacing-unit: 8px;
+  --card-radius: 8px;
+  --button-radius: 6px;
+}
+
+/* 全局样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 字体栈 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--neutral-gray);
+  line-height: 1.6;
+}
+
+/* 标题样式 */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--neutral-dark);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--neutral-gray);
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--neutral-dark);
+}
+
+/* 导航栏样式 */
+.VPNav {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+.VPNav .VPNavBar .curtain {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.VPNavBar .items a.router-link-active,
+.VPNavBar .items a.router-link-exact-active {
+  color: var(--brand-primary) !important;
+  font-weight: 600;
+}
+
+/* Hero 区域优化 */
+.VPHero {
+  padding: 48px 0 64px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -25%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(54, 79, 199, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.VPHero .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.VPHero .hero-text {
+  flex: 1;
+  z-index: 1;
+}
+
+.VPHero .hero-text h1 {
+  margin-bottom: 16px;
+}
+
+.VPHero .hero-text p {
+  font-size: 1.125rem;
+  color: var(--neutral-gray);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.VPHero .hero-image {
+  flex: 1;
+  z-index: 1;
+}
+
+.VPHero .hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(54, 79, 199, 0.15);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 16px;
+}
+
+/* 按钮样式优化 */
+.VPButton {
+  border-radius: var(--button-radius) !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  padding: 12px 24px !important;
+  font-size: 1rem !important;
+}
+
+.VPButton.brand {
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  color: #fff !important;
+}
+
+.VPButton.brand:hover {
+  background: #2c42a0 !important;
+  border-color: #2c42a0 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(54, 79, 199, 0.3);
+}
+
+.VPButton.alt {
+  background: transparent !important;
+  border-color: var(--brand-primary) !important;
+  color: var(--brand-primary) !important;
+}
+
+.VPButton.alt:hover {
+  background: var(--brand-primary) !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+/* 功能卡片区域 */
+.features {
+  padding: 64px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.features .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.features .feature-card {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features .feature-card:hover {
+  background: #fff;
+  border-color: var(--brand-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(54, 79, 199, 0.1);
+}
+
+.features .feature-card .icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(54, 79, 199, 0.1);
+  border-radius: 12px;
+  font-size: 1.5rem;
+}
+
+.features .feature-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.125rem;
+}
+
+.features .feature-card p {
+  font-size: 0.9375rem;
+  color: var(--neutral-gray);
+  line-height: 1.6;
+}
+
+.features .feature-card a {
+  margin-top: 16px;
+  color: var(--brand-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.features .feature-card a:hover {
+  text-decoration: underline;
+}
+
+/* 页面内容区域 */
+.VPContent {
+  padding: 32px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.VPContent h2 {
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--neutral-light);
+}
+
+.VPContent h3 {
+  margin: 32px 0 16px;
+}
+
+.VPContent p {
+  margin-bottom: 16px;
+}
+
+.VPContent a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+.VPContent a:hover {
+  text-decoration: underline;
+}
+
+/* 表格样式 */
+.VPContent table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  background: #fff;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.VPContent th,
+.VPContent td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--neutral-light);
+}
+
+.VPContent th {
+  background: var(--card-bg);
+  font-weight: 600;
+  color: var(--neutral-dark);
+}
+
+.VPContent tr:last-child td {
+  border-bottom: none;
+}
+
+.VPContent tr:hover {
+  background: rgba(54, 79, 199, 0.02);
+}
+
+/* 常见问题折叠面板 */
+.VPContent details {
+  margin-bottom: 12px;
+  background: #fff;
+  border-radius: var(--card-radius);
+  border: 1px solid var(--neutral-light);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.VPContent details:hover {
+  border-color: var(--brand-secondary);
+}
+
+.VPContent details[open] {
+  border-color: var(--brand-primary);
+  box-shadow: 0 4px 12px rgba(54, 79, 199, 0.08);
+}
+
+.VPContent summary {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--neutral-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.VPContent summary:hover {
+  background: rgba(54, 79, 199, 0.04);
+}
+
+.VPContent details > div {
+  padding: 0 16px 16px;
+  color: var(--neutral-gray);
+}
+
+/* CTA 区域 */
+.cta-section {
+  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+  border-radius: 12px;
+  padding: 48px;
+  text-align: center;
+  margin: 32px 0;
+  color: #fff;
+  box-shadow: 0 12px 32px rgba(54, 79, 199, 0.3);
+}
+
+.cta-section h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.cta-section p {
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+.cta-section a {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #fff;
+  color: var(--brand-primary);
+  border-radius: var(--button-radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-section a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 页脚样式 */
+.VPFooter {
+  background: var(--neutral-dark);
+  padding: 32px 24px;
+  margin-top: 64px;
+}
+
+.VPFooter .footer-copyright {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .features .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .VPHero {
+    padding: 32px 0 48px;
+  }
+
+  .VPHero .hero-content {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .features {
+    padding: 48px 16px;
+  }
+
+  .features .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features .feature-card {
+    min-height: auto;
+  }
+
+  .VPContent {
+    padding: 24px 16px;
+  }
+
+  .cta-section {
+    padding: 32px 16px;
+  }
+
+  .VPButton {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .VPHero .hero-text p {
+    font-size: 1rem;
+  }
+
+  .features .feature-card {
+    padding: 24px 16px;
+  }
+}
