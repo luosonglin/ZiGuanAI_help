@@ -69,18 +69,11 @@ export default defineConfig({
           collapsible: true,
           collapsed: false,
           items: [
-            {
-              text: '任务创建/编辑',
-              collapsible: true,
-              collapsed: false,
-              items: [
-                { text: '创建/编辑任务', link: '/using-system/task-management/create-task/' },
-                { text: '重复任务', link: '/using-system/task-management/repeat-task/' },
-                { text: '添加附件', link: '/using-system/task-management/attachments' },
-                { text: '子任务', link: '/using-system/task-management/subtasks' },
-                { text: '引入模板', link: '/using-system/task-management/templates' },
-              ]
-            },
+            { text: '创建任务', link: '/using-system/task-management/create-task/' },
+            { text: '重复任务', link: '/using-system/task-management/repeat-task/' },
+            { text: '添加附件', link: '/using-system/task-management/attachments' },
+            { text: '子任务', link: '/using-system/task-management/subtasks' },
+            { text: '引入模板', link: '/using-system/task-management/templates' },            
             { text: '任务分发', link: '/using-system/task-management/share' },
             { text: '任务跟进', link: '/using-system/task-management/follow-up' },
             { text: '任务提醒', link: '/using-system/task-management/reminders' },
