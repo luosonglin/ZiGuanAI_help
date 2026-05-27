@@ -70,7 +70,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             {
-              text: '任务分发',
+              text: '任务创建/编辑',
               collapsible: true,
               collapsed: false,
               items: [
@@ -81,7 +81,7 @@ export default defineConfig({
                 { text: '引入模板', link: '/using-system/task-management/templates' },
               ]
             },
-            { text: '任务分享', link: '/using-system/task-management/share' },
+            { text: '任务分发', link: '/using-system/task-management/share' },
             { text: '任务跟进', link: '/using-system/task-management/follow-up' },
             { text: '任务提醒', link: '/using-system/task-management/reminders' },
             { text: '任务执行', link: '/using-system/task-management/execute' }
