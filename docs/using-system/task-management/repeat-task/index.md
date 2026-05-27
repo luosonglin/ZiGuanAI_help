@@ -219,7 +219,6 @@ A：重复任务会占用一定的系统资源，建议：
 
 ## 相关文档
 
-- [自定义时间设置](/using-system/task-management/repeat-task/custom-time)
 - [创建/编辑任务](/using-system/task-management/create-task/)
 - [任务提醒](/using-system/task-management/reminders)
 - [任务执行](/using-system/task-management/execute)

@@ -53,6 +53,8 @@ export default defineConfig({
       '/getting-started/': [
         {
           text: '新手入门',
+          collapsible: true,
+          collapsed: false,
           items: [
             { text: '系统快速上手', link: '/getting-started/quick-start' },
             { text: '账号登录与权限', link: '/getting-started/login-permission' },
@@ -64,9 +66,13 @@ export default defineConfig({
       '/using-system/': [
         {
           text: '资管任务',
+          collapsible: true,
+          collapsed: false,
           items: [
             {
               text: '任务分发',
+              collapsible: true,
+              collapsed: false,
               items: [
                 { text: '创建/编辑任务', link: '/using-system/task-management/create-task/' },
                 { text: '重复任务', link: '/using-system/task-management/repeat-task/' },
@@ -75,14 +81,16 @@ export default defineConfig({
                 { text: '引入模板', link: '/using-system/task-management/templates' },
               ]
             },
-            { text: '分享', link: '/using-system/task-management/share' },
-            { text: '跟进', link: '/using-system/task-management/follow-up' },
-            { text: '提醒', link: '/using-system/task-management/reminders' },
-            { text: '执行', link: '/using-system/task-management/execute' }
+            { text: '任务分享', link: '/using-system/task-management/share' },
+            { text: '任务跟进', link: '/using-system/task-management/follow-up' },
+            { text: '任务提醒', link: '/using-system/task-management/reminders' },
+            { text: '任务执行', link: '/using-system/task-management/execute' }
           ]
         },
         {
           text: '资管工作台',
+          collapsible: true,
+          collapsed: false,
           items: [
             { text: 'AI资管助手', link: '/using-system/workbench/ai-assistant' },
             { text: '标准函件报告', link: '/using-system/workbench/standard-report' },
@@ -92,6 +100,8 @@ export default defineConfig({
         },
         {
           text: '投资企业档案',
+          collapsible: true,
+          collapsed: false,
           items: [
             { text: '企业档案', link: '/using-system/enterprise-archive/enterprise-file' },
             { text: '文件归档', link: '/using-system/enterprise-archive/file-archive' },
@@ -100,6 +110,8 @@ export default defineConfig({
         },
         {
           text: '企业经营监测',
+          collapsible: true,
+          collapsed: false,
           items: [
             { text: '动态经营监测', link: '/using-system/business-monitor/dynamic-monitor' },
             { text: '项目管理评价', link: '/using-system/business-monitor/project-evaluation' }
@@ -107,6 +119,8 @@ export default defineConfig({
         },
         {
           text: '报告工作台',
+          collapsible: true,
+          collapsed: false,
           items: [
             { text: '报告工作台', link: '/using-system/report-workbench' }
           ]
@@ -114,6 +128,8 @@ export default defineConfig({
        
         {
           text: '资管数据库',
+          collapsible: true,
+          collapsed: false,
           items: [
             { text: '财务数据库', link: '/using-system/database/financial-db' },
             { text: '法规合规库', link: '/using-system/database/compliance-db' },
@@ -124,6 +140,8 @@ export default defineConfig({
         },
         {
           text: '资管内训',
+          collapsible: true,
+          collapsed: false,
           items: [
             { text: '资管题库', link: '/using-system/training/question-bank' },
             { text: '政策学术交流', link: '/using-system/training/policy-academy' }
@@ -133,6 +151,8 @@ export default defineConfig({
       '/more-resources/': [
         {
           text: '更多资源',
+          collapsible: true,
+          collapsed: false,
           items: [
             { text: '常见问题FAQ', link: '/more-resources/faq' },
             { text: '版本更新', link: '/more-resources/version-update' }

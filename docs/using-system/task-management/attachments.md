@@ -136,5 +136,4 @@ A：支持以下方式：
 ## 相关文档
 
 - [创建/编辑任务](/using-system/task-management/create-task/)
-- [任务描述](/using-system/task-management/task-description)
 - [子任务](/using-system/task-management/subtasks)

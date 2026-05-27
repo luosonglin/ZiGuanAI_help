@@ -36,11 +36,6 @@
 7.  核对全部信息无误后，点击右下角【创建】按钮完成任务发布；
 （编辑已有任务时，修改信息后点击保存即可生效。）
 
-## 配套关联配置
-- [分配对象](/using-system/task-management/create-task/assign-object)
-- [重要紧急程度](/using-system/task-management/create-task/priority)
-- [督办](/using-system/task-management/create-task/supervision)
-
 ## 注意事项
 1.  任务标题为必填项，未填写时无法完成创建
 2.  任务分派对象支持单选/多选，可同时指派给多人或多个部门协同执行
